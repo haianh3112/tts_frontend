@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+tr, td {
+	padding: 0;
+	margin: 0;
+	border: none;
+	vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.full-width {
+	width: 100%;
+}
+
+#page-wrapper {
+	width: 100%;
+	min-height: 100%;
+  min-width: 800px;
+}
+
+#page-header {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  
+}
+
+#page-header__logo {
+	background-color: rgba(250,251,252,0.1);
+  height: 60px;
+	width: 200px;
+	padding: 5px 24px 0;
+	vertical-align: middle;
+}
+
+#page-header__toolbar {
+	width: 100%;
+	height: 60px;
+}
+
+#page-header__toolbar td {
+	vertical-align: middle;
+}
+
+#search-box {
+	border: none;
+	box-sizing: content-box;
+	border-radius: 5px;
+	outline: none;
+	margin-left: 20px;
+	padding: 10px;
+	width: 200px;
+}
+
+#toolbar-commands {
+	text-align: right;
+}
+
+.toolbar-commands__item {
+	display: inline-block;
+	color: white;
+	line-height: 1.5em;
+	margin-right: 10px;
+}
+
+#main-menu {
+	background-image: linear-gradient(to right, #141e30, #243b55) !important;
+}
+
+.main-menu__item {
+	background-color: transparent;
+	border-radius: 5px;
+	color: rgba(255, 255, 255, 0.6);
+	display: block;
+	line-height: 30px;
+	margin: 10px 20px;
+	padding-left: 10px;
+}
+
+.main-menu__item:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #FFFFFF;
+}
+
+#content-wrapper {
+	background-color: #F1F4F6;
+}
+
+
+.content__block-container {
+	border-collapse: separate;
+	border-spacing: 20px;
+	width: 100%;
+}
+.content__block-container .img{
+	text-align: center;
+	width: 100%;
+}
+
+.content__block-container:not(:first-child) {
+	margin-top: -20px;
+}
+
+.content__block {
+	background-color: #FFFFFF;
+	width: 100%;
+}
+
+.content__block__header {
+	border-bottom: 1px solid #DDDDDD;
+	font-size: 1.3em;
+	font-weight: 400;
+	height: 55px;
+	padding-left: 20px;
+	vertical-align: middle;
+}
+
+.content__block__body {
+	padding: 10px 20px;
+	height: 100px; /* For demo purpose */
+}
+
+.content__block__footer {
+	border-top: 1px solid #DDDDDD;
+	height: 55px;
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.cards .card .container img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
